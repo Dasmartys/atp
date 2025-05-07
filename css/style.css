@@ -1,0 +1,66 @@
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #FFB000;
+}
+
+header h1 {
+    color: #FFB000;
+    margin: 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFB000;
+}
+
+footer {
+    background-color: #000000;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #FFB000;
+}
+
+.gallery, .players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10px;
+}
+
+.gallery img, .player-card img {
+    width: 300px;
+    border: 3px solid #FFB000;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery img:hover, .player-card img:hover {
+    transform: scale(1.05);
+    border-color: #FFFFFF;
+}
+
+.player-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #FFB000;
+    width: 320px;
+    text-align: center;
+}
