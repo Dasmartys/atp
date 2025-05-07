@@ -23,18 +23,30 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 20px;
     display: none;
     background-color: #1a1a1a;
+
+    /* Nové → aby byly hráči vedle sebe */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
 }
 
-/* Přidáno → Fotky vedle sebe */
+.player-card {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border: 2px solid #FFB000;
+    width: 300px; /* pevná šířka karty */
+    color: white;
+}
+
 .player-card img {
-    display: inline-block;
-    width: 300px;
-    margin: 10px;
+    width: 100%; /* fotky se roztáhnou na šířku karty */
     border: 3px solid #FFB000;
     transition: transform 0.3s, border-color 0.3s;
+    margin-top: 10px;
 }
 
 .player-card img:hover {
@@ -117,10 +129,10 @@ for (var i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "flex") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            panel.style.display = "flex";
         }
     });
 }
@@ -128,4 +140,3 @@ for (var i = 0; i < acc.length; i++) {
 
 </body>
 </html>
-
