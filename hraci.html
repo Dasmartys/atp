@@ -24,14 +24,15 @@
 
 .panel {
     padding: 20px;
-    display: none;
+    display: none;  /* ← tohle zůstane jako výchozí (schované) */
     background-color: #1a1a1a;
-
-    /* Nové → aby byly hráči vedle sebe */
-    display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
+}
+
+.panel.open {
+    display: flex;  /* ← tady se nastaví flex až při otevření */
 }
 
 .player-card {
