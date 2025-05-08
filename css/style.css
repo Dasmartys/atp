@@ -205,3 +205,19 @@ h2.accordion {
     color: #FFB000;
     text-decoration: underline;
 }
+
+.rules-title {
+    color: #FFB000;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.rules-title .megafon {
+    width: 30px;
+    height: auto;
+}
