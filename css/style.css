@@ -108,6 +108,23 @@ h2.accordion {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.rules-title {
+    color: #FFB000;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.rules-title .megafon {
+    width: 30px;
+    height: auto;
 }
 
 /* Mobilní optimalizace */
@@ -179,21 +196,6 @@ h2.accordion {
     margin: 5px 0;
 }
 
-.partner-info a {
-    color: white;
-    text-decoration: none;
-}
-
-.partner-info a:hover {
-    text-decoration: underline;
-}
-
-.partner-info a {
-    color: #FFFFFF; /* Bílá barva odkazu */
-    text-decoration: none;
-    font-weight: bold;  /* trošku víc viditelnější odkaz */
-}
-
 .partner-info a,
 .partner-info a:visited {
     color: #FFFFFF;
@@ -204,20 +206,4 @@ h2.accordion {
 .partner-info a:hover {
     color: #FFB000;
     text-decoration: underline;
-}
-
-.rules-title {
-    color: #FFB000;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.rules-title .megafon {
-    width: 30px;
-    height: auto;
 }
