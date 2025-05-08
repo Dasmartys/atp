@@ -148,3 +148,53 @@ h2.accordion {
         font-size: 14px;
     }
 }
+
+.partner-card {
+    background-color: #1a1a1a;
+    border: 2px solid #FFB000;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.partner-card img {
+    width: 100px;
+    height: auto;
+    border: 2px solid #FFB000;
+}
+
+.partner-info {
+    color: white;
+}
+
+.partner-info h3 {
+    color: #FFB000;
+    margin: 0 0 10px 0;
+}
+
+.partner-info p {
+    color: white;
+    margin: 5px 0;
+}
+
+.partner-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.partner-info a:hover {
+    text-decoration: underline;
+}
+
+.partner-info a {
+    color: #FFFFFF; /* Bílá barva odkazu */
+    text-decoration: none;
+    font-weight: bold;  /* trošku víc viditelnější odkaz */
+}
+
+.partner-info a:hover {
+    color: #FFB000; /* Po najetí žlutě, aby to ladilo s ostatním stylem */
+    text-decoration: underline;
+}
