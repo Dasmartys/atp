@@ -194,7 +194,14 @@ h2.accordion {
     font-weight: bold;  /* trošku víc viditelnější odkaz */
 }
 
+.partner-info a,
+.partner-info a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .partner-info a:hover {
-    color: #FFB000; /* Po najetí žlutě, aby to ladilo s ostatním stylem */
+    color: #FFB000;
     text-decoration: underline;
 }
