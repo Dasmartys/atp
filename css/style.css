@@ -70,3 +70,23 @@ footer {
     width: 320px;
     text-align: center;
 }
+
+.rules {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.rules h1 {
+    color: #FFB000;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.rules p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
