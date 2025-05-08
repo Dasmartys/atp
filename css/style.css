@@ -106,15 +106,23 @@ h2.accordion {
     margin-bottom: 20px;
 }
 
-/* Mobilní optimalizace */
 @media (max-width: 600px) {
-    .player-card {
-        width: 100%;
+
+    header img {
+        max-height: 50px;
     }
 
-    h2.accordion {
-        font-size: 20px;
-        padding: 10px;
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .player-card {
+        width: 100%;
     }
 
     .rules h1 {
