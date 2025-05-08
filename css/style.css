@@ -58,15 +58,19 @@ footer {
     background-color: #1a1a1a;
     padding: 20px;
     border: 2px solid #FFB000;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .player-card img {
     width: 100%;
+    height: auto;
     border: 3px solid #FFB000;
     transition: transform 0.3s, border-color 0.3s;
     margin-top: 10px;
+    object-fit: cover;
 }
 
 .player-card img:hover {
@@ -74,7 +78,7 @@ footer {
     border-color: #FFFFFF;
 }
 
-/* Sekce (Kapitán, Poručík...) */
+/* Accordion sekce (Kapitán, Poručík...) */
 h2.accordion {
     background-color: #FFB000;
     color: #000000;
@@ -106,6 +110,7 @@ h2.accordion {
     margin-bottom: 20px;
 }
 
+/* Mobilní optimalizace */
 @media (max-width: 600px) {
 
     header img {
@@ -123,6 +128,12 @@ h2.accordion {
 
     .player-card {
         width: 100%;
+        max-width: 100%;
+    }
+
+    .player-card img {
+        width: 100%;
+        height: auto;
     }
 
     .rules h1 {
@@ -131,5 +142,9 @@ h2.accordion {
 
     .rules p {
         font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
     }
 }
