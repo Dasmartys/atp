@@ -210,13 +210,13 @@ h2.accordion {
 
 .baner1, .baner2 {
     position: fixed;
-    top: 80px;
+    top: 0;
     width: 150px;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* aby byly pod obsahem */
+    z-index: -1;
 }
 
 .baner1 {
