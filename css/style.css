@@ -208,24 +208,29 @@ h2.accordion {
     text-decoration: underline;
 }
 
-.banner-left, .banner-right {
+.baner1, .baner2 {
     position: fixed;
-    top: 120px; /* výška od horního okraje stránky */
-    width: 100px;
-    height: auto;
-    z-index: 10;
+    top: 80px;
+    width: 150px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* aby byly pod obsahem */
 }
 
-.banner-left {
+.baner1 {
     left: 0;
+    background-image: url("fotky/baner1.jpg");
 }
 
-.banner-right {
+.baner2 {
     right: 0;
+    background-image: url("fotky/baner2.jpg");
 }
 
 @media (max-width: 800px) {
-    .banner-left, .banner-right {
+    .baner1, .baner2 {
         display: none;
     }
 }
