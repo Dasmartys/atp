@@ -24,35 +24,57 @@
 
 .panel {
     padding: 20px;
-    display: none;  /* ← tohle zůstane jako výchozí (schované) */
+    display: none;
     background-color: #1a1a1a;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .panel.open {
-    display: flex;  /* ← tady se nastaví flex až při otevření */
+    display: flex;
 }
 
 .player-card {
-    background-color: #2a2a2a;
-    padding: 10px;
+    background-color: #1a1a1a;
+    padding: 20px;
     border: 2px solid #FFB000;
-    width: 300px; /* pevná šířka karty */
+    width: 220px;
     color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 176, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
 }
 
 .player-card img {
-    width: 100%; /* fotky se roztáhnou na šířku karty */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     border: 3px solid #FFB000;
-    transition: transform 0.3s, border-color 0.3s;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.player-card img:hover {
-    transform: scale(1.05);
-    border-color: #FFFFFF;
+.player-card h3 {
+    color: #FFB000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.player-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsivita */
+@media (max-width: 600px) {
+    .player-card {
+        width: 100%;
+    }
 }
 </style>
 </head>
@@ -60,7 +82,6 @@
 
 <header>
     <h1>Hráči týmu</h1>
-    
 <nav>
    <a href="index.html">Domů</a>
    <a href="onas.html">O nás</a>
@@ -71,40 +92,38 @@
    <a href="pravidla.html">Pravidla</a>
    <a href="partneri.html">Partneři</a>
 </nav>
+</header>
 
 <!-- Kapitán -->
 <h2 class="accordion">Kapitán</h2>
 <div class="panel">
     <div class="player-card">
+        <img src="fotky/hraci/kapitan/Jara/gear1.jpg" alt="Jaroslav Vybíral">
         <h3>Jaroslav Vybíral (Kapitán)</h3>
         <p>Gear: vzor 95, M4A4</p>
-        <img src="fotky/hraci/kapitan/Jara/gear1.jpg" alt="Gear 1">
-        <img src="fotky/hraci/kapitan/Jara/gear2.jpg" alt="Gear 2">
     </div>
 </div>
 
 <!-- Poručík -->
 <h2 class="accordion">Poručík</h2>
 <div class="panel">
+
     <div class="player-card">
-        <h3>Lukáš Kopec Kopečný(Poručík)</h3>
+        <img src="fotky/hraci/porucik/Kopec/gear1.jpg" alt="Lukáš Kopec Kopečný">
+        <h3>Lukáš Kopec Kopečný (Poručík)</h3>
         <p>Gear: coyote brown, woodland, HK416 HPA</p>
-        <img src="fotky/hraci/porucik/Kopec/gear1.jpg" alt="Gear 1">
-        <img src="fotky/hraci/porucik/Kopec/gear2.jpg" alt="Gear 2">
-    </div>
-    
-    <div class="player-card">
-        <h3>Denis Denny Lukšík (Poručík)</h3>
-        <p>Gear: multicam, M4A4 </p>
-        <img src="fotky/hraci/porucik/Denny/gear1.jpg" alt="Gear 1">
-        <img src="fotky/hraci/porucik/Denny/gear2.jpg" alt="Gear 2">
     </div>
 
-     <div class="player-card">
+    <div class="player-card">
+        <img src="fotky/hraci/porucik/Denny/gear1.jpg" alt="Denis Denny Lukšík">
+        <h3>Denis Denny Lukšík (Poručík)</h3>
+        <p>Gear: multicam, M4A4</p>
+    </div>
+
+    <div class="player-card">
+        <img src="fotky/hraci/porucik/Vifič/gear1.jpg" alt="Štěpán Vifič Vícha">
         <h3>Štěpán Vifič Vícha (Poručík)</h3>
-        <p>Gear: multicam, M4A4 </p>
-        <img src="fotky/hraci/porucik/Vifič/gear1.jpg" alt="Gear 1">
-        <img src="fotky/hraci/porucik/Vifič/gear2.jpg" alt="Gear 2">
+        <p>Gear: multicam, M4A4</p>
     </div>
 
 </div>
@@ -112,80 +131,75 @@
 <!-- Servisák -->
 <h2 class="accordion">Servisák</h2>
 <div class="panel">
-<div class="player-card">
+    <div class="player-card">
+        <img src="fotky/hraci/servisak/langi/gear1.jpg" alt="Vojta Langi Langr">
         <h3>Vojta Langi Langr (Servisák)</h3>
         <p>Gear: multicam tropic, M4A4 HPA</p>
-        <img src="fotky/hraci/servisak/langi/gear1.jpg" alt="Gear 1">
-        <img src="fotky/hraci/servisak/langi/gear2.jpg" alt="Gear 2">
-</div>
+    </div>
 </div>
 
 <!-- Seržant -->
 <h2 class="accordion">Seržant</h2>
 <div class="panel">
-     <div class="player-card">
-        <h3>Radim Pijavička Šamánek (seržant)</h3>
-        <p>Gear: Civil, M4A4 </p>
-        <img src="fotky/hraci/serzant/radim/gear1.jpg" alt="Gear 1">
-         <img src="fotky/hraci/serzant/radim/gear2.jpg" alt="Gear 2">
+    <div class="player-card">
+        <img src="fotky/hraci/serzant/radim/gear1.jpg" alt="Radim Pijavička Šamánek">
+        <h3>Radim Pijavička Šamánek (Seržant)</h3>
+        <p>Gear: Civil, M4A4</p>
     </div>
 </div>
 
 <!-- Vojín -->
 <h2 class="accordion">Vojín</h2>
 <div class="panel">
-  <div class="player-card">
-        <h3>Lukáš Lukšík (vojín)</h3>
-        <p>Gear: Black camo, M4A4 </p>
-        <img src="fotky/hraci/vojin/lukáš/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/vojin/lukáš/gear2.jpg" alt="Gear 2">
-    </div> 
 
-     <div class="player-card">
-        <h3>Alexandr Saša Ramiš (vojín)</h3>
-        <p>Gear: Vz95, M4A4 </p>
-        <img src="fotky/hraci/vojin/Saša/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/vojin/Saša/gear2.jpg" alt="Gear 2">
+    <div class="player-card">
+        <img src="fotky/hraci/vojin/lukáš/gear1.jpg" alt="Lukáš Lukšík">
+        <h3>Lukáš Lukšík (Vojín)</h3>
+        <p>Gear: Black camo, M4A4</p>
     </div>
 
     <div class="player-card">
-        <h3>Petr Vícha (vojín)</h3>
-        <p>Gear: Vz95, M4A4 </p>
-        <img src="fotky/hraci/vojin/petr/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/vojin/petr/gear2.jpg" alt="Gear 2">
+        <img src="fotky/hraci/vojin/Saša/gear1.jpg" alt="Alexandr Saša Ramiš">
+        <h3>Alexandr Saša Ramiš (Vojín)</h3>
+        <p>Gear: Vz95, M4A4</p>
     </div>
 
     <div class="player-card">
-        <h3>Matěj Mathew Hubáček (vojín)</h3>
-        <p>Gear: Black camo, M4A4 </p>
-        <img src="fotky/hraci/vojin/matěj/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/vojin/matěj/gear2.jpg" alt="Gear 2">
+        <img src="fotky/hraci/vojin/petr/gear1.jpg" alt="Petr Vícha">
+        <h3>Petr Vícha (Vojín)</h3>
+        <p>Gear: Vz95, M4A4</p>
     </div>
 
-     <div class="player-card">
-        <h3>Arnošt Škvarek Posolda (vojín)</h3>
-        <p>Gear: Vz95, M4A4, ODSTŘELOVAČKA </p>
-        <img src="fotky/hraci/vojin/škvarek/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/vojin/škvarek/gear2.jpg" alt="Gear 2">
+    <div class="player-card">
+        <img src="fotky/hraci/vojin/matěj/gear1.jpg" alt="Matěj Mathew Hubáček">
+        <h3>Matěj Mathew Hubáček (Vojín)</h3>
+        <p>Gear: Black camo, M4A4</p>
     </div>
+
+    <div class="player-card">
+        <img src="fotky/hraci/vojin/škvarek/gear1.jpg" alt="Arnošt Škvarek Posolda">
+        <h3>Arnošt Škvarek Posolda (Vojín)</h3>
+        <p>Gear: Vz95, M4A4, ODSTŘELOVAČKA</p>
+    </div>
+
 </div>
 
 <!-- Zkušebka -->
 <h2 class="accordion">Zkušebka</h2>
 <div class="panel">
+
     <div class="player-card">
+        <img src="fotky/hraci/zkusebka/jan/gear1.jpg" alt="Jan Bajgar">
         <h3>Jan Bajgar (ZK)</h3>
         <p>Gear: Multicam, M4A4</p>
-        <img src="fotky/hraci/zkusebka/jan/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/zkusebka/jan/gear2.jpg" alt="Gear 2">
     </div>
 
     <div class="player-card">
+        <img src="fotky/hraci/zkusebka/jakub/gear1.jpg" alt="Jakub Zeman">
         <h3>Jakub Zeman (ZK)</h3>
         <p>Gear: Mix, M4A4</p>
-        <img src="fotky/hraci/zkusebka/jakub/gear1.jpg" alt="Gear 1">
-      <img src="fotky/hraci/zkusebka/jakub/gear2.jpg" alt="Gear 2">
-        </div>
+    </div>
+
 </div>
 
 <footer>
@@ -211,3 +225,4 @@ window.onload = function() {
 
 </body>
 </html>
+
