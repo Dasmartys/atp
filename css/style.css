@@ -207,3 +207,25 @@ h2.accordion {
     color: #FFB000;
     text-decoration: underline;
 }
+
+.banner-left, .banner-right {
+    position: fixed;
+    top: 120px; /* výška od horního okraje stránky */
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+
+.banner-left {
+    left: 0;
+}
+
+.banner-right {
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    .banner-left, .banner-right {
+        display: none;
+    }
+}
