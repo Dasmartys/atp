@@ -19,6 +19,12 @@ header h1 {
     margin: 0;
 }
 
+header img {
+    max-height: 80px;
+    width: auto;
+    margin-left: 10px; 
+}
+
 nav a {
     color: #FFFFFF;
     margin: 0 15px;
