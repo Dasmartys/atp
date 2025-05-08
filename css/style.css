@@ -1,4 +1,3 @@
-
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -9,7 +8,7 @@ body {
 
 header {
     background-color: #000000;
-    padding: 20px 0 40px 0; /* nahoře 20px, po stranách 0, dole 40px */
+    padding: 20px 0 40px 0;
     text-align: center;
     border-bottom: 3px solid #FFB000;
 }
@@ -22,7 +21,7 @@ header h1 {
 header img {
     max-height: 80px;
     width: auto;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 nav a {
@@ -44,23 +43,15 @@ footer {
     border-top: 3px solid #FFB000;
 }
 
-.gallery, .players {
+/* Hráči a galerie */
+.players {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 40px 10px;
-}
-
-.gallery img, .player-card img {
-    width: 300px;
-    border: 3px solid #FFB000;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.gallery img:hover, .player-card img:hover {
-    transform: scale(1.05);
-    border-color: #FFFFFF;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .player-card {
@@ -71,6 +62,30 @@ footer {
     text-align: center;
 }
 
+.player-card img {
+    width: 100%;
+    border: 3px solid #FFB000;
+    transition: transform 0.3s, border-color 0.3s;
+    margin-top: 10px;
+}
+
+.player-card img:hover {
+    transform: scale(1.05);
+    border-color: #FFFFFF;
+}
+
+/* Sekce (Kapitán, Poručík...) */
+h2.accordion {
+    background-color: #FFB000;
+    color: #000000;
+    padding: 15px;
+    text-align: left;
+    font-size: 24px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+/* Pravidla */
 .rules {
     max-width: 900px;
     margin: 0 auto;
@@ -89,4 +104,24 @@ footer {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+/* Mobilní optimalizace */
+@media (max-width: 600px) {
+    .player-card {
+        width: 100%;
+    }
+
+    h2.accordion {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .rules h1 {
+        font-size: 32px;
+    }
+
+    .rules p {
+        font-size: 16px;
+    }
 }
