@@ -1,11 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partneri - ATP / PUNKS</title>
+    <title>Partneři - ATP / PUNKS</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .partners-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .partners-section h1 {
+            color: #FFB000;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .partner-card {
+            background-color: #1a1a1a;
+            color: white;
+            border: 2px solid #FFB000;
+            margin-bottom: 30px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .partner-card img {
+            width: 100px;
+            height: auto;
+            border: 2px solid #FFB000;
+        }
+
+        .partner-info {
+            text-align: left;
+        }
+
+        .partner-info h2 {
+            color: #FFB000;
+            margin: 0 0 10px 0;
+        }
+
+        .partner-info p {
+            margin: 0 0 10px 0;
+        }
+
+        .partner-info a {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        .partner-info a:hover {
+            color: #FFB000;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,21 +66,51 @@
     <h1>ATP / PUNKS</h1>
     
 <nav>
-    <a href="index.html">Domů</a>
-    <a href="onas.html">O nás</a>
-    <a href="tym.html">Náš tým</a>
-    <a href="fotky.html">Fotky</a>
-    <a href="hraci.html">Hráči</a>
-    <a href="mladez.html">Mládež</a>
-    <a href="pravidla.html">Pravidla</a>
-    <a href="partneri.html">Partneři</a>
+   <a href="index.html">Domů</a>
+   <a href="onas.html">O nás</a>
+   <a href="tym.html">Náš tým</a>
+   <a href="fotky.html">Fotky</a>
+   <a href="hraci.html">Hráči</a>
+   <a href="mladez.html">Mládež</a>
+   <a href="pravidla.html">Pravidla</a>
+   <a href="partneri.html">Partneři</a>
 </nav>
 
 </header>
 
-<section style="text-align:center; padding:50px;">
-    <h2>Partneri</h2>
-    <p>Zde bude obsah pro sekci Partneri.</p>
+<section class="partners-section">
+    <h1>Naši partneři</h1>
+
+    <!-- Partner 1 -->
+    <div class="partner-card">
+        <img src="fotky/partneri/partner1.png" alt="Partner 1 logo">
+        <div class="partner-info">
+            <h2>Partner 1</h2>
+            <p>Dodavatel kuliček, plynu a příslušenství.</p>
+            <a href="https://partner1.cz" target="_blank">Navštívit stránky</a>
+        </div>
+    </div>
+
+    <!-- Partner 2 -->
+    <div class="partner-card">
+        <img src="fotky/partneri/partner2.png" alt="Partner 2 logo">
+        <div class="partner-info">
+            <h2>Partner 2</h2>
+            <p>Výrobce taktické výstroje a doplňků pro airsoft.</p>
+            <a href="https://partner2.cz" target="_blank">Navštívit stránky</a>
+        </div>
+    </div>
+
+    <!-- Partner 3 -->
+    <div class="partner-card">
+        <img src="fotky/partneri/partner3.png" alt="Partner 3 logo">
+        <div class="partner-info">
+            <h2>Partner 3</h2>
+            <p>Specialista na opravy a servis airsoftových zbraní.</p>
+            <a href="https://partner3.cz" target="_blank">Navštívit stránky</a>
+        </div>
+    </div>
+
 </section>
 
 <footer>
