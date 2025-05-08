@@ -216,7 +216,7 @@ h2.accordion {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0; /* Bylo -1 -> ZMĚNĚNO NA 0, aby logo a menu zůstaly nad */
 }
 
 .baner1 {
