@@ -78,7 +78,7 @@ footer {
     border-color: #FFFFFF;
 }
 
-/* Accordion sekce (Kapitán, Poručík...) */
+/* Accordion sekce */
 h2.accordion {
     background-color: #FFB000;
     color: #000000;
@@ -108,7 +108,7 @@ h2.accordion {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .rules-title {
@@ -127,45 +127,7 @@ h2.accordion {
     height: auto;
 }
 
-/* Mobilní optimalizace */
-@media (max-width: 600px) {
-
-    header img {
-        max-height: 50px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    h1, h2 {
-        font-size: 24px;
-    }
-
-    .player-card {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .player-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .rules h1 {
-        font-size: 32px;
-    }
-
-    .rules p {
-        font-size: 16px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-
+/* Partneři */
 .partner-card {
     background-color: #1a1a1a;
     border: 2px solid #FFB000;
@@ -208,6 +170,7 @@ h2.accordion {
     text-decoration: underline;
 }
 
+/* Boční bannery */
 .baner1, .baner2 {
     position: fixed;
     top: 0;
@@ -216,7 +179,7 @@ h2.accordion {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0; /* Bylo -1 -> ZMĚNĚNO NA 0, aby logo a menu zůstaly nad */
+    z-index: -1;
 }
 
 .baner1 {
@@ -229,8 +192,47 @@ h2.accordion {
     background-image: url("fotky/baner2.jpg");
 }
 
+/* Mobilní verze */
 @media (max-width: 800px) {
     .baner1, .baner2 {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header img {
+        max-height: 50px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .player-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .player-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rules h1 {
+        font-size: 32px;
+    }
+
+    .rules p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
     }
 }
